@@ -1,0 +1,96 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Table Rows */
+tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table Data Cells */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
+
+.table-container {
+    max-height: 600px; /* Adjust height to fit approximately 8 rows */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add a border for the container */
+    padding: 0; /* Remove padding to align table */
+}
+
+#api_table {
+    width: 100%; /* Ensure table fills the container width */
+    border-collapse: collapse; /* Optional: Improve table appearance */
+}
+
+#api_table th, #api_table td {
+    padding: 5px; /* Add padding for table cells */
+    text-align: left; /* Align text */
+    border: 1px solid #ddd; /* Add border to cells */
+}
